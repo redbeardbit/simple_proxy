@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenResty Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .status {
+            background-color: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .info {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 OpenResty Server</h1>
+        <div class="status">
+            <h2>✅ Successfully Running</h2>
+            <p>OpenResty version: 1.27.1.2-0-alpine</p>
+        </div>
+        <div class="info">
+            <h3>Configuration Details</h3>
+            <p>• Port: 80 (HTTP)</p>
+            <p>• Port: 443 (HTTPS)</p>
+            <p>• Document Root: /var/www/html</p>
+            <p>• Logs: /var/log/nginx</p>
+        </div>
+        <p>This is a test page to verify that OpenResty is working correctly.</p>
+    </div>
+</body>
+</html>

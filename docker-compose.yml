@@ -1,0 +1,24 @@
+services:
+  openresty:
+    image: openresty/openresty:1.27.1.2-0-alpine
+    container_name: openresty
+    restart: unless-stopped
+    ports:
+      - "9080:9080"
+      - "9081:9081"
+      - "9082:9082"
+    volumes:
+      - ./conf:/etc/nginx
+      - ./logs:/var/log/nginx
+      - ./html:/var/www/html
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+    networks:
+      - openresty-network
+
+networks:
+  openresty-network:
+    driver: bridge

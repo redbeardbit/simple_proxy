@@ -1,0 +1,6 @@
+# Mapping file for Stand A (port 9080)
+# Format: domain.name ip:port;
+
+prod.internal 10.0.1.10:8080;
+staging.internal 10.0.1.11:8080;
+api.internal 10.0.1.12:8080;

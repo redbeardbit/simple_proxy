@@ -1,0 +1,6 @@
+# Mapping file for Stand B (port 9081)
+# Format: domain.name ip:port;
+
+web.internal 10.0.2.10:8080;
+admin.internal 10.0.2.11:8080;
+service.internal 10.0.2.12:8080;
