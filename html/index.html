@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>OpenResty Test Page</title>
+    <title>Proxy Cluster Status</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,23 +32,31 @@
             border-radius: 5px;
             margin: 20px 0;
         }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚀 OpenResty Server</h1>
+        <h1>🚀 Proxy Cluster</h1>
         <div class="status">
-            <h2>✅ Successfully Running</h2>
-            <p>OpenResty version: 1.27.1.2-0-alpine</p>
+            <h2>✅ Operational</h2>
+            <p>Proxy cluster is running and forwarding requests correctly</p>
         </div>
         <div class="info">
-            <h3>Configuration Details</h3>
-            <p>• Port: 80 (HTTP)</p>
-            <p>• Port: 443 (HTTPS)</p>
+            <h3>Proxy Configuration</h3>
+            <p>• Port: 9080 (HTTP)</p>
+            <p>• Port: 9081 (Proxy A)</p>
+            <p>• Port: 9082 (Proxy B)</p>
             <p>• Document Root: /var/www/html</p>
-            <p>• Logs: /var/log/nginx</p>
         </div>
-        <p>This is a test page to verify that OpenResty is working correctly.</p>
+        <p>This page confirms the proxy cluster is operational and ready to forward requests to backend services.</p>
+        <div class="footer">
+            <p>Proxy Cluster v1.0 | Health Check Endpoint: /status</p>
+        </div>
     </div>
 </body>
 </html>

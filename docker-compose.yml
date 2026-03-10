@@ -8,9 +8,14 @@ services:
       - "9081:9081"
       - "9082:9082"
     volumes:
-      - ./conf:/etc/nginx
-      - ./logs:/var/log/nginx
-      - ./html:/var/www/html
+      - ./conf:/etc/nginx:ro
+      - ./logs:/var/log/nginx:rw
+      - ./html:/var/www/html:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 512M
     logging:
       driver: "json-file"
       options:
