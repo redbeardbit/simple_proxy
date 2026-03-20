@@ -2,6 +2,7 @@ services:
   openresty:
     image: openresty/openresty:1.27.1.2-0-alpine
     container_name: openresty
+    command: [ "/usr/local/openresty/bin/openresty", "-g", "daemon off;", "-c", "/etc/nginx/nginx.conf" ]
     restart: unless-stopped
     ports:
       - "9080:9080"
@@ -9,7 +10,7 @@ services:
       - "9082:9082"
     volumes:
       - ./conf:/etc/nginx:ro
-      - ./logs:/var/log/nginx:rw
+      - ./logs:/var/log/nginx
       - ./html:/var/www/html:ro
     deploy:
       resources:

@@ -1,2 +1,32 @@
-# Minimal mime.types for proxy cluster info page
-text/html                           html htm shtml
+types {
+    text/html                             html htm shtml;
+    text/css                              css;
+    text/xml                              xml;
+    image/gif                             gif;
+    image/jpeg                            jpeg jpg;
+    application/javascript                js;
+
+    text/mathml                           mml;
+    text/plain                            txt;
+    text/x-component                      htc;
+
+    image/png                             png;
+    image/tiff                            tif tiff;
+    image/vnd.wap.wbmp                    wbmp;
+    image/x-icon                          ico;
+    image/x-jng                           jng;
+    image/x-ms-bmp                        bmp;
+    image/svg+xml                         svg svgz;
+    image/webp                            webp;
+
+    application/font-woff                 woff;
+    application/json                      json;
+    application/xhtml+xml                 xhtml;
+    application/zip                       zip;
+    application/x-x509-ca-cert            der pem crt;
+    application/x-spawn-cfg               cfg;
+
+    audio/mpeg                            mp3;
+    video/mp4                             mp4;
+    video/x-msvideo                       avi;
+}
